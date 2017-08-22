@@ -20,7 +20,7 @@
 
 ///////////////////////////////////////
 3. Projects i) on hover cover to fit thumbnails ///DONE
-            ii) add modals
+            ii) add modals //Modals working
 
 
 

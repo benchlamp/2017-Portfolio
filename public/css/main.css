@@ -170,6 +170,7 @@ body {
 
 .project-cover:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .project-thumbnail > img {
