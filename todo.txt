@@ -1,0 +1,115 @@
+///////////////////////////////////////
+1. Navbar styling
+.navbar-default {
+    border-radius: 0px;
+    border: 0px currentColor;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+
+
+///////////////////////////////////////
+2. Recent projects i) add floats
+                   ii) styling
+
+
+
+///////////////////////////////////////
+3. Projects i) on hover cover to fit thumbnails ///DONE
+            ii) add modals
+
+
+
+///////////////////////////////////////
+4. Contact i) add contact icons
+           ii) styling
+           #contact {
+    padding-bottom: 2em;
+    background-color: rgb(255, 255, 255);
+}
+bootstrap.css:1598
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+bootstrap.css:1597
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+bootstrap.css:1062
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+bootstrap.css:1062
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from body
+main1.css:2
+body {
+    text-align: center;
+    color: rgb(83, 87, 101);
+    font-family: Georgia, Serif;
+    font-size: 22px;
+    font-weight: 200;
+    background-color: rgb(247, 249, 251);
+}
+
+
+
+
+///////////////////////////////////////
+5. Footer styling           
+.footer {
+    padding: 1em 0px;
+    font-size: 0.7em;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+}
+main1.css:8
+.footer {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+bootstrap.css:1062
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+bootstrap.css:1062
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from body
+main1.css:2
+body {
+    text-align: center;
+    color: rgb(83, 87, 101);
+    font-family: Georgia, Serif;
+    font-size: 22px;
+    font-weight: 200;
+    background-color: rgb(247, 249, 251);
+}
