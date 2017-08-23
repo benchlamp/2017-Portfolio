@@ -45,6 +45,10 @@ body {
   font-weight: 500;
 }
 
+.menu a {
+  color: rgb(83, 87, 101);
+}
+
 .menu a:hover {
   text-decoration: none;
   color: rgb(255, 87, 34);
@@ -216,9 +220,33 @@ body {
   background-color: #C8C6FA;
 }
 
+.contact {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.btn-social-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-social .fa {
+  font-size: 38px;
+  margin: 10px;
+}
+
+.btn-social .fa:hover {
+  color: rgb(255, 87, 34);;
+}
+
 .footer {
-  background-color: #5995DA;
   height: 60px;
+  padding: 1em 0px;
+  font-size: 0.7em;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
 }
 
 
