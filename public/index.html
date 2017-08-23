@@ -4,7 +4,6 @@
         <title>Benchlamp</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/big.css">
         <link rel="stylesheet" href="css/main.css" type="text/css" />
         <link rel="stylesheet" href="css/planetscape-main.css">
         <link rel="stylesheet" href="css/modal.css">
@@ -15,7 +14,6 @@
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     </head>
     <body>
       
@@ -54,8 +52,8 @@
           
           <div class="section menu">
               <div class="brand">Benchlamp</div>
-              <div class="projects-menu-link"><a href="#projects">Projects</a></div>
-              <div class="contact-menu-link"><a href="#contact">Contact</a></div>
+              <div class="menu-link-projects"><a href="#projects">Projects</a></div>
+              <div class="menu-link-contact"><a href="#contact">Contact</a></div>
           </div>
           
           
@@ -65,7 +63,7 @@
             <div class="planetscape-display-area">
               <div class="sky spin">
             
-                <div class="sun"></div>
+                <div class="sun sun-transition"></div>
                 
                 
                 <div class="cloud cloud-1">
@@ -138,19 +136,19 @@
                 target="blank">freecodecamp</a> curriculum, as well as sharing anything else I fancy building.</p>
 
                 <p>I decided to make this site after completing freecodecamp’s front end &amp; data visualisation certifications. I love writing clean, responsive code and am always looking for new projects where I can develop my knowledge. So far my skill
-                base covers Javascript, jQuery, SASS, CSS3, HTML5, Compass, Bootstrap, react.js, D3 and node.js</p>
+                base covers Javascript, jQuery, LESS, CSS3, HTML5, MongoDB, Bootstrap, react.js, D3 and node.js</p>
 
                     
                 <div class="skill-icons">
                   <i class="devicons devicons-javascript_badge" title="Javascript"></i>
                   <i class="devicons devicons-jquery" title="jQuery"></i>
-                  <i class="devicons devicons-sass" title="Sass"></i>
+                  <i class="devicons devicons-less" title="Less"></i>
                   <i class="devicons devicons-css3" title="CSS3"></i>
                   <i class="devicons devicons-html5" title="HTML5"></i>
-                  <i class="devicons devicons-compass" title="Compass"></i>
+                  <i class="devicons devicons-mongodb" title="MongoDB"></i>
                   <i class="devicons devicons-bootstrap" title="Bootstrap"></i>
                   <i class="devicons devicons-react" title="React.js"></i>
-                  <i class="devicons devicons-nodejs" title="Node.js"></i>
+                  <i class="devicons devicons-nodejs_small" title="Node.js"></i>
                 </div>    
 
           </div>
@@ -175,27 +173,7 @@
                 
             </div> 
         
-          
-          <div class="section project project-1" id="projects">
-            <div class="project-thumbnail">
-              <div class="project-cover" id="flags"><h4>Force Directed Graph</h4></div>
-              <img src="http://www.benchlamp.co.uk/images/flags.png" />
-            </div>
-          </div>
-          
-          <div class="section project project-2">Project 2</div>
-          <div class="section project project-3">Project 3</div>
-          <div class="section project project-3">Project 4</div>
-          <div class="section project project-1">Project 5</div>
-          <div class="section project project-2">Project 6</div>
-          <div class="section project project-2">Project 7</div>  
-          <div class="section project project-3">Project 8</div>
-          <div class="section project project-1">Project 9</div>
-          <div class="section project project-1">Project 10</div>
-          <div class="section project project-2">Project 11</div>
-          <div class="section project project-3">Project 12</div>
-          
-          
+
           <div class="section contact" id="contact">
             <hr/>
     
@@ -208,6 +186,7 @@
           <div class="section footer">Footer</div>
         </div>
         <script src="js/projectData.js"></script>
+        <script src="js/index.client.js"></script>
         <script src="js/modal.client.js"></script>
         <script src="js/planetscape.client.js"></script>
     </body>

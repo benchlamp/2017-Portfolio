@@ -177,7 +177,10 @@
 
 .spin {
   animation: spin 60s linear infinite;
+}
 
+.sun-transition {
+  animation: sun-transition 60s linear infinite;
 }
 
 @keyframes spin {
@@ -192,4 +195,13 @@
   }
 }
 
+
+@keyframes sun-transition {
+  50% {
+    border-color: black;
+  }
+  100% {
+    border-color: lightblue;
+  }
+}
 
