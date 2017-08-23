@@ -59,7 +59,11 @@ body {
   margin-right: 10px;
 }
 
-
+hr {
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+}
 
 .header {
   background-color: #B2D6FF;
@@ -119,11 +123,10 @@ body {
 
 
 .recent {
-  background-color: #C8C6FA;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   height: auto;
-
 }
 
 .recent-1,
@@ -135,6 +138,7 @@ body {
   justify-content: space-around;
   margin: 20px auto;
   text-align: center;
+  padding: 0 10px;
 }
 
 .recent-2 {
@@ -157,7 +161,8 @@ body {
 
 
 .project {
-  border: solid transparent 5px;
+  border: solid lightgray 5px;
+  border-radius: 0 0 2% 2%;
   position: relative;
   overflow: hidden;
   min-height: 300px;
@@ -173,12 +178,13 @@ body {
   max-height: 90%;
   max-width: 100%;
   overflow: hidden;
+
 }
 
 .project-cover {
   height: 100%;
   width: 100%;
-  background-color: lightgray;
+  background-color: rgb(247, 249, 251);
   position: absolute;
   opacity: 0;
   display: flex;
@@ -198,13 +204,13 @@ body {
 }
 
 .project-caption {
-  min-height: 10%;
+  height: 10%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: lightgray;
-  opacity: 0.9;
+  font-size: 18px;
 }
 
 
@@ -224,7 +230,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  min-height: 300px;
+  min-height: 200px;
 }
 
 .btn-social-container {

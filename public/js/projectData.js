@@ -1,5 +1,6 @@
 var projectData = {
           "flags": {
+            "caption": "Force Directed Graph",
             "title": "Force Directed Graph of State Contiguity",
             "thumbnail": "images/flags.png",
             "link": "projects/flags.html",
@@ -7,6 +8,7 @@ var projectData = {
             "skills": ["javascript", "html", "jquery", "css"]
           },
           "impacts": {
+            "caption": "Meteorite Impacts",
             "title": "Map Of Global Meteorite Impacts",
             "thumbnail": "images/impacts.png",
             "link": "projects/impacts.html",
@@ -14,6 +16,7 @@ var projectData = {
             "skills": ["javascript", "html", "jquery", "css"]
           },
           "heat": {
+            "caption": "Temperature Heat Graph",
             "title": "Heat Graph of Global Temperatures",
             "thumbnail": "images/heat.png",
             "link": "projects/heat.html",
@@ -21,6 +24,7 @@ var projectData = {
             "skills": ["javascript", "html", "jquery", "css"]
           },
           "bar": {
+            "caption": "Bar Chart of US GDP",
             "title": "Bar Chart of US GDP",
             "thumbnail": "images/bar.png",
             "link": "projects/bar.html",
@@ -28,6 +32,7 @@ var projectData = {
             "skills": ["javascript", "html", "jquery", "css"]
           },
           "dungeon": {
+            "caption": "Dungeon Crawler Game",
             "title": "Dungeon Crawler Game",
             "thumbnail": "images/dungeon.png",
             "link": "projects/dungeon.html",
@@ -35,6 +40,7 @@ var projectData = {
             "skills": ["javascript", "html", "jquery", "css"]
           },
           "gol": {
+            "caption": "Game Of Life Simulation",
             "title": "Game Of Life Simulation",
             "thumbnail": "images/gol.png",
             "link": "projects/gol.html",
@@ -42,6 +48,7 @@ var projectData = {
             "skills": ["react", "javascript", "html", "jquery", "sass", "css"]
           },
           "markdown": {
+            "caption": "Markdown Previewer",
             "title": "Markdown Previewer",
             "thumbnail": "images/markdown.png",
             "link": "projects/markdown.html",
@@ -49,13 +56,15 @@ var projectData = {
             "skills": ["react", "javascript", "bootstrap", "html", "jquery", "sass", "css"]
           },
           "leaderboard": {
-            "title": "Free Code Camp Leaderboard",
+            "caption": "FreeCodeCamp Leaderboard",
+            "title": "FreeCodeCamp Leaderboard",
             "thumbnail": "images/leaderboard.png",
             "link": "projects/leaderboard.html",
             "description": "<p>A leaderboard showing the most helpful members of the freecodecamp forums, based on user upvotes.</p><p>Fairly straightforward, with an ajax call to get the API, Bootstrap to build the table and a few sorting functions in the background.</p>",
             "skills": ["react", "javascript", "bootstrap", "html", "jquery", "sass", "css"]
           },
           "simon": {
+            "caption": "Simon Game",
             "title": "Simon Game",
             "thumbnail": "images/simon.png",
             "link": "projects/simon.html",
@@ -63,6 +72,7 @@ var projectData = {
             "skills": ["javascript", "html", "jquery", "css"]
           },
           "pomodoro": {
+            "caption": "Pomodoro Timer",
             "title": "Pomodoro Timer",
             "thumbnail": "images/pomodoro.png",
             "link": "projects/pomodoro.html",
@@ -70,6 +80,7 @@ var projectData = {
             "skills": ["javascript", "html", "jquery", "css"]
           },
           "calculator": {
+            "caption": "JS Calculator",
             "title": "JS Calculator",
             "thumbnail": "images/calculator.png",
             "link": "projects/calculator.html",
