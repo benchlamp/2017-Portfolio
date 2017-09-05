@@ -15,6 +15,8 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
     </head>
     <body>
       
@@ -52,9 +54,9 @@
         <div class="page">
           
           <div class="section menu">
-              <div class="brand">Benchlamp</div>
-              <div class="menu-link-projects"><a href="#project-0">Projects</a></div>
-              <div class="menu-link-contact"><a href="#contact">Contact</a></div>
+              <div class="brand">benchlamp</div>
+              <div class="menu-link-projects"><a href="#project-0">projects</a></div>
+              <div class="menu-link-contact"><a href="#contact">contact</a></div>
           </div>
           
           
@@ -126,18 +128,21 @@
           
           <div class="profile-photo-container">
               <div class="profile-photo">
-                  <img src="images/profile.jpg">
+                <img src="images/profile.jpg">
               </div>
           </div>
           
           <div class="section about">
-
+          <div class="border-blocker">
+            <div class="blocker-left"></div>
+            <div class="blocker-center"></div>
+            <div class="blocker-right"></div>
+          </div>
+          
                 <h2>about</h2>
-                <p>Hi, welcome to my portfolio. My name is James, and I have made this site to chart my progress on the road to becoming a full stack web developer. I will be posting the projects I work through as part of the <a href="https://www.freecodecamp.com/map"
-                target="blank">freecodecamp</a> curriculum, as well as sharing anything else I fancy building.</p>
+                <p>Hi, welcome to my portfolio. My name is James, and I’m a web developer. I will be posting the projects I work through as I learn new techniques & technologies, as well as sharing anything else I build.</p>
 
-                <p>I decided to make this site after completing freecodecamp’s front end &amp; data visualisation certifications. I love writing clean, responsive code and am always looking for new projects where I can develop my knowledge. So far my skill
-                base covers Javascript, jQuery, LESS, CSS3, HTML5, MongoDB, Bootstrap, react.js, D3 and node.js</p>
+                <p>I decided to make this site after completing freecodecamp’s certifications, to showcase everything I’ve done so far. I love writing code, and am always looking for new projects where I can develop my knowledge. The technologies I’ve used in my projects so far include Javascript, jQuery, LESS, CSS3, HTML5, MongoDB, Bootstrap, React, D3 and Node</p>
 
                     
                 <div class="skill-icons">
@@ -155,24 +160,46 @@
           </div>
             
             <div class="section recent">
-                <h2>Recent Projects</h2>
-                <div class="recent-1">
-                  <div class="recent-thumbnail recent-1-thumbnail"></div>
-                  <div class="recent-content recent-1-content">
-                    <h3>Recent 1</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus orci vel dui pellentesque, non tempor ex molestie. Nullam efficitur commodo risus quis iaculis. Proin ultricies congue faucibus. Mauris euismod massa justo. Vivamus porttitor est id ipsum placerat eleifend. Vivamus sit amet mi enim. Integer bibendum arcu sit amet purus eleifend, nec sagittis mauris imperdiet. Proin at tortor tristique, varius nibh viverra, finibus lacus. Ut in orci id augue ornare imperdiet sit amet id metus. Ut aliquam consequat quam, nec faucibus magna egestas sit amet.
+                <h2>recent projects</h2>
+                <hr />
+                <a href="https://benchmark-voting-app.herokuapp.com/" target="blank">
+                  <div class="recent-1">
+                    <div class="recent-thumbnail recent-1-thumbnail"><img src="images/benchmark-thumb.jpg" /></div>
+                    <div class="recent-content recent-1-content">
+                      <h3>Full stack voting app</h3>
+                      <p>A full stack voting application, with authenticated user login and profile management. Built with node & express on the backend, and mongoDB for the database. Hosted on Heroku.</p>
+                      <div class="recent-skill-icons">
+                        <i class="devicons devicons-javascript_badge" title="Javascript"></i>
+                        <i class="devicons devicons-jquery" title="jQuery"></i>
+                        <i class="devicons devicons-less" title="Less"></i>
+                        <i class="devicons devicons-css3" title="CSS3"></i>
+                        <i class="devicons devicons-html5" title="HTML5"></i>
+                        <i class="devicons devicons-mongodb" title="MongoDB"></i>
+                        <i class="devicons devicons-bootstrap" title="Bootstrap"></i>
+                        <i class="devicons devicons-nodejs_small" title="Node.js"></i>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                
+                </a>
                 <hr />
                 
-                <div class="recent-2">
-                  <div class="recent-thumbnail recent-2-thumbnail"></div>
-                  <div class="recent-content recent-2-content">
-                    <h3>Recent 2</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus orci vel dui pellentesque, non tempor ex molestie. Nullam efficitur commodo risus quis iaculis. Proin ultricies congue faucibus. Mauris euismod massa justo. Vivamus porttitor est id ipsum placerat eleifend. Vivamus sit amet mi enim. Integer bibendum arcu sit amet purus eleifend, nec sagittis mauris imperdiet. Proin at tortor tristique, varius nibh viverra, finibus lacus. Ut in orci id augue ornare imperdiet sit amet id metus. Ut aliquam consequat quam, nec faucibus magna egestas sit amet.
+                <a href="/planetscape-blog.html">
+                  <div class="recent-2">
+                    <div class="recent-thumbnail recent-2-thumbnail"><img src="images/planetscape-thumb.jpg" /></div>
+                    <div class="recent-content recent-2-content">
+                      <h3>Building an animated header</h3>
+                      <p>A walkthrough of some of the ideas & techniques involved in creating an animated planetscape for the header image.</p>
+                      <div class="recent-skill-icons">
+                        <i class="devicons devicons-javascript_badge" title="Javascript"></i>
+                        <i class="devicons devicons-jquery" title="jQuery"></i>
+                        <i class="devicons devicons-css3" title="CSS3"></i>
+                        <i class="devicons devicons-html5" title="HTML5"></i>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
+                
+                <hr />
                 
             </div> 
         

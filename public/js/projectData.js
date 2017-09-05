@@ -15,6 +15,14 @@ var projectData = {
             "description": "<p>A map showing meteorite impacts across the world, with node size & colour scaled to the intensity of the landing. Some extreme outliers in the data made choosing an appropriate scale for intensity a little tricky, but I’m happy the end result gives a good representation.</p> ",
             "skills": ["javascript", "html", "jquery", "css"]
           },
+          "gol": {
+            "caption": "Game Of Life Simulation",
+            "title": "Game Of Life Simulation",
+            "thumbnail": "images/gol.png",
+            "link": "projects/gol.html",
+            "description": "<p>This is a version of <a href=https://en.wikipedia.org/wiki/Conway's_Game_of_Life>Conway’s Game Of Life</a>. Each cell in the grid can have one of two states- alive or dead. Here the alive cells are coloured green. Each turn, every cell evaluates the states of its neighbours, and as a result will either switch states or remain as it is.</p><p>It is a highly simplified simulation of a population. If a cell is surrounded by living neighbours, it may die due to overpopulation. Similarly a cell may die if it has too few living neighbours, due to isolation. If a dead cell has the correct number of living neighbours, it may switch states to alive, simulating an expanding population.</p>",
+            "skills": ["react", "javascript", "html", "jquery", "sass", "css"]
+          },
           "heat": {
             "caption": "Temperature Heat Graph",
             "title": "Heat Graph of Global Temperatures",
@@ -38,14 +46,6 @@ var projectData = {
             "link": "projects/dungeon.html",
             "description": "<p>One of the more involved projects so far on this course, and definitely one of my favourites. I built this one from scratch, and in hindsight there are a lot of things I would do differently. Having now worked through a similar problem in Eloquent Javacript, I can see much more graceful ways to solve some of the problems I came across.</p><p>However, I’m proud of having worked through this and made the solutions work myself, and I wanted to preserve this code for future inspiration.</p>",
             "skills": ["javascript", "html", "jquery", "css"]
-          },
-          "gol": {
-            "caption": "Game Of Life Simulation",
-            "title": "Game Of Life Simulation",
-            "thumbnail": "images/gol.png",
-            "link": "projects/gol.html",
-            "description": "<p>This is a version of <a href=https://en.wikipedia.org/wiki/Conway's_Game_of_Life>Conway’s Game Of Life</a>. Each cell in the grid can have one of two states- alive or dead. Here the alive cells are coloured green. Each turn, every cell evaluates the states of its neighbours, and as a result will either switch states or remain as it is.</p><p>It is a highly simplified simulation of a population. If a cell is surrounded by living neighbours, it may die due to overpopulation. Similarly a cell may die if it has too few living neighbours, due to isolation. If a dead cell has the correct number of living neighbours, it may switch states to alive, simulating an expanding population.</p>",
-            "skills": ["react", "javascript", "html", "jquery", "sass", "css"]
           },
           "markdown": {
             "caption": "Markdown Previewer",

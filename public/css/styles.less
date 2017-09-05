@@ -1,3 +1,8 @@
+@bg-color:  rgb(234, 239, 242);
+@content-bg-color: rgb(255, 255, 255);
+@text-color: rgb(83, 87, 101);
+@highlight-color: rgb(255, 87, 34);
+
 * {
   margin: 0;
   padding: 0;
@@ -5,29 +10,30 @@
   font-size: 20px;
   font-weight: 200;
   line-height: 1.2em;
-  color: #535765;
+  color: @text-color;
   text-align: center;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Corben', Georgia, Times, serif;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
 }
-p,
-div {
-  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
+
 body {
-  background-color: #eaeff2;
+    background-color: @bg-color;
 }
+
 hr {
   height: 2px;
-  background-color: #ffffff;
+  background-color: @content-bg-color;
   width: 80%;
 }
+
+
+
+
 .page {
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +41,8 @@ hr {
   padding: 0 20px;
   margin: 0 auto;
 }
+
+
 .section {
   width: 100%;
   display: flex;
@@ -43,6 +51,7 @@ hr {
   margin-bottom: 20px;
   border: solid 1px gray;
 }
+
 .menu {
   height: 60px;
   display: flex;
@@ -52,21 +61,27 @@ hr {
   border-radius: 0px;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 22px;
-  background-color: #ffffff;
+  background-color: @content-bg-color;
   font-weight: 500;
+     a {
+      color: @text-color;
+      font-size: 18px;
+    } 
+     a:hover {
+        text-decoration: none;
+        color: @highlight-color;
+    }  
 }
-.menu a {
-  color: #535765;
-  font-size: 18px;
-}
-.menu a:hover {
-  text-decoration: none;
-  color: #ff5722;
-}
+
+
 .menu-link-projects {
   margin-left: auto;
   margin-right: 10px;
 }
+
+
+
+
 .profile-photo-container {
   height: 200px;
   width: 80%;
@@ -77,28 +92,35 @@ hr {
   justify-content: center;
   position: relative;
 }
+
+
+
+
 .profile-photo {
   height: 200px;
   width: 200px;
   border-radius: 100%;
 }
+
 .profile-photo img {
   max-height: 100%;
   max-width: 100%;
   border-radius: 100%;
-  border: solid 20px #eaeff2;
-  -webkit-box-shadow: 0px 0px 0px 1px #808080;
-  -moz-box-shadow: 0px 0px 0px 1px #808080;
-  box-shadow: 0px 0px 0px 1px #808080;
+  border: solid 20px @bg-color;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(128,128,128,1);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(128,128,128,1);
+  box-shadow: 0px 0px 0px 1px rgba(128,128,128,1);
 }
+
 .about {
   height: auto;
-  background-color: #ffffff;
+  background-color: @content-bg-color;
   display: flex;
   flex-direction: column;
   padding: 100px 10px 0;
   position: relative;
 }
+
 .border-blocker {
   height: 20px;
   width: 100%;
@@ -107,55 +129,69 @@ hr {
   left: 0px;
   z-index: 4;
 }
+
 .blocker-left {
-  background-color: #eaeff2;
+  background-color: @bg-color;
   width: 20%;
   height: 100%;
   display: inline-block;
   margin-right: 0px;
 }
+
 .blocker-center {
   width: 160px;
   height: 100%;
   display: inline-block;
 }
+
 .blocker-right {
-  background-color: #eaeff2;
+  background-color: @bg-color;
   width: 20%;
   height: 100%;
   display: inline-block;
   margin-left: 0px;
 }
+
+
 .about > * {
   margin: 10px 0;
 }
+
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 20px;
 }
+
 .devicons {
-  font-size: 2em;
+	font-size: 2em; 
 }
 .devicons:hover {
-  color: #ff5722;
-  cursor: default;
+	color: @highlight-color;
+	cursor: default;
 }
+
+
 .recent {
-  background-color: #ffffff;
+  background-color: @content-bg-color;
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: auto;  
+    a {
+      border: solid 1px transparent;
+    }
+     a:hover {
+    text-decoration: none;
+    border-top-color: @highlight-color;
+    border-bottom-color: @highlight-color;
+    } 
 }
-.recent a {
-  border: solid 1px transparent;
-}
-.recent a:hover {
-  text-decoration: none;
-  border-top-color: #ff5722;
-  border-bottom-color: #ff5722;
-}
+
+
+
+
+
 .recent-1,
 .recent-2 {
   width: 100%;
@@ -167,25 +203,32 @@ hr {
   text-align: center;
   padding: 0 10px;
 }
+
 .recent-2 {
   flex-direction: row-reverse;
 }
+
 .recent-content p {
   font-size: 16px;
 }
+
 .recent-thumbnail {
   height: 250px;
   width: 250px;
   overflow: hidden;
 }
+
 .recent-thumbnail img {
   max-height: 100%;
   max-width: 100%;
 }
+
 .recent-skill-icons {
   font-size: 10px;
   margin-top: 20px;
 }
+
+
 .project {
   border: solid white 15px;
   outline: 1px solid gray;
@@ -197,6 +240,9 @@ hr {
   display: flex;
   flex-direction: column;
 }
+
+
+
 .project-thumbnail {
   position: relative;
   max-height: 90%;
@@ -204,10 +250,11 @@ hr {
   overflow: hidden;
   border: solid lightgray 1px;
 }
+
 .project-cover {
   height: 100%;
   width: 100%;
-  background-color: #f7f9fb;
+  background-color: rgb(247, 249, 251);
   position: absolute;
   opacity: 0;
   display: flex;
@@ -215,14 +262,17 @@ hr {
   justify-content: center;
   transition: opacity 0.2s linear;
 }
+
 .project-cover:hover {
   opacity: 0.9;
   cursor: pointer;
 }
+
 .project-thumbnail > img {
   max-height: 100%;
-  max-width: 100%;
+  max-width: 100%;  
 }
+
 .project-caption {
   height: 10%;
   width: 100%;
@@ -232,34 +282,44 @@ hr {
   background-color: white;
   font-size: 18px;
 }
+
+
 .contact {
-  background-color: #ffffff;
+  background-color: @content-bg-color;
   display: flex;
   flex-direction: column;
   min-height: 200px;
 }
+
 .btn-social-container {
   display: flex;
   justify-content: space-between;
 }
+
 .btn-social .fa {
   font-size: 28px;
   margin: 10px;
 }
+
 .btn-social .fa:hover {
-  color: #ff5722;
+  color: @highlight-color;
 }
+
 .footer {
   height: 60px;
   padding: 1em 0px;
   font-size: 0.7em;
   font-weight: 500;
-  background-color: #ffffff;
+  background-color: @content-bg-color;
 }
+
+
+
+
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
   * {
-    font-weight: 300;
+      font-weight: 300;
   }
   .recent-1,
   .recent-2 {
@@ -269,6 +329,7 @@ hr {
     width: 100%;
   }
 }
+
 /* Tablet Styles */
 @media only screen and (min-width: 501px) and (max-width: 960px) {
   .project {
@@ -282,19 +343,23 @@ hr {
     width: 100%;
   }
 }
+
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .page {
     width: 960px;
     margin: 0 auto;
   }
+
   .project {
     width: 33.3%;
   }
+
   .contact {
     height: 200px;
   }
   .recent-content {
-    max-width: 70%;
-  }
+  max-width: 70%;
 }
+}
+
