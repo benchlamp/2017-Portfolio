@@ -31,7 +31,7 @@ for (var i = 0; i < 50; i++) {
   var x = starCoord(xMin, xMax);
   var y = starCoord(yMin, yMax);
   $(".sky").append(
-    "<div class='star' style='top: " + x + "px; left: " + y + "px; z-index: 1'>☆</div>"
+    "<div class='star' style='top: " + x + "px; left: " + y + "px; z-index: 1'>&#9733;</div>"
   )
   
 }

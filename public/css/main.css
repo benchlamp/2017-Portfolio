@@ -41,14 +41,14 @@ hr {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  border: solid 1px gray;
+  border: solid 2px lightgray;
 }
 .menu {
   height: 60px;
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
-  border: solid 1px gray;
+  border: solid 2px lightgray;
   border-radius: 0px;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 22px;
@@ -87,9 +87,9 @@ hr {
   max-width: 100%;
   border-radius: 100%;
   border: solid 20px #eaeff2;
-  -webkit-box-shadow: 0px 0px 0px 1px #808080;
-  -moz-box-shadow: 0px 0px 0px 1px #808080;
-  box-shadow: 0px 0px 0px 1px #808080;
+  -webkit-box-shadow: 0px 0px 0px 2px lightgray;
+  -moz-box-shadow: 0px 0px 0px 2px lightgray;
+  box-shadow: 0px 0px 0px 2px lightgray;
 }
 .about {
   height: auto;
@@ -188,8 +188,7 @@ hr {
 }
 .project {
   border: solid white 15px;
-  outline: 1px solid gray;
-  border-radius: 2%;
+  outline: 2px solid lightgray;
   position: relative;
   overflow: hidden;
   min-height: 300px;
@@ -202,12 +201,12 @@ hr {
   max-height: 90%;
   max-width: 100%;
   overflow: hidden;
-  border: solid lightgray 1px;
+  border: 2px solid lightgray;
 }
 .project-cover {
   height: 100%;
   width: 100%;
-  background-color: #f7f9fb;
+  background-color: #eaeff2;
   position: absolute;
   opacity: 0;
   display: flex;
@@ -216,7 +215,7 @@ hr {
   transition: opacity 0.2s linear;
 }
 .project-cover:hover {
-  opacity: 0.9;
+  opacity: 1;
   cursor: pointer;
 }
 .project-thumbnail > img {
@@ -255,6 +254,7 @@ hr {
   font-size: 0.7em;
   font-weight: 500;
   background-color: #ffffff;
+  margin-bottom: 0;
 }
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {

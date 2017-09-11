@@ -1,20 +1,7 @@
 
-
-
 ///////////////////////////////////////
-About- 
-re-word introduction
-
-
-
-///////////////////////////////////////
-Recent projects-
-add floats
-styling
-write copy
-
-
-
+Header-
+planetscape should start on night side
 
 ///////////////////////////////////////
 Contact-

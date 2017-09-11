@@ -11,7 +11,8 @@
   border-radius: 100%;
   position: absolute;
   overflow: hidden;
-  background-color: lightblue;
+  background-color: black;
+  transform: rotate(180deg);
 }
 
 .sun {
@@ -186,23 +187,23 @@
 
 @keyframes spin {
   50% {
-    background-color: black;
+    background-color: lightblue;
   }
   100% {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-    background-color: lightblue;
+    transform: rotate(540deg);
+    -webkit-transform: rotate(540deg);
+  -ms-transform: rotate(540deg);
+    background-color: black;
   }
 }
 
 
 @keyframes sun-transition {
-  50% {
-    border-color: black;
+  60% {
+    border-color: lightblue;
   }
   100% {
-    border-color: lightblue;
+    border-color: black;
   }
 }
 
