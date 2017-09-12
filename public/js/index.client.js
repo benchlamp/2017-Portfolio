@@ -10,7 +10,7 @@ $(document).ready(function() {
             
                 "<div class='section project' id='project-" + i + "'>" + 
                     "<div class='project-thumbnail'>" +
-                        "<div class='project-cover' id='" + projectID + "'><h4><strong>Click for more info</strong></h4></div>" +
+                        "<div class='project-cover' id='" + projectID + "'><h4><strong><i class='fa fa-plus' aria-hidden='true'></i></strong></h4></div>" +
                         "<img src='" + projectData[projectDataKeys[i]].thumbnail + "' />" +
                     "</div>" +
                     "<div class='project-caption'>" + projectData[projectDataKeys[i]].caption + "</div>" +

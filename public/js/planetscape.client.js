@@ -8,17 +8,17 @@ var screenWidth = document.documentElement.clientWidth;
 var xMin, xMax, yMin, yMax;
 
 if (screenWidth > 1200) {
-  xMin = 1200;
+  xMin = 800; //1200
   xMax = 2400;
   yMin = 600;
   yMax = 2400;
 } else if (screenWidth < 1201 && screenWidth > 600) {
-  xMin = 800;
+  xMin = 600; //800
   xMax = 1584;
   yMin = 396;
   yMax = 1584;
 } else {
-  xMin = 480;
+  xMin = 280;  //480
   xMax = 960;
   yMin = 240;
   yMax = 960;  
@@ -26,7 +26,7 @@ if (screenWidth > 1200) {
 
 
 //populate stars
-for (var i = 0; i < 50; i++) {
+for (var i = 0; i < 200; i++) {
   
   var x = starCoord(xMin, xMax);
   var y = starCoord(yMin, yMax);

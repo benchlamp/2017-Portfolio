@@ -2,6 +2,9 @@
 * {
     font-size: 20px;
     text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    
 }
 
 .blog {
@@ -9,11 +12,12 @@
     margin-bottom: 20px;
     padding: 10px;
     width: 100%;
-    border: solid 1px gray;
+    border: solid 2px lightgray;
+    color: rgb(83, 87, 101) !important;
 }
 
 hr {
-    margin: auto;
+    margin-right: auto;
 }
 
 

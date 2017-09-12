@@ -8,18 +8,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 22px;
   line-height: 1.2em;
   color: @text-color;
   text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Corben', Georgia, Times, serif;
+    /*font-family: 'Corben', Georgia, Times, serif;*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 p, div {
-    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    /*font-family: 'Nobile', Helvetica, Arial, sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 body {
@@ -81,7 +84,13 @@ hr {
 }
 
 
-
+.header {
+  max-height: 300px;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+  }
+}
 
 .profile-photo-container {
   height: 200px;
@@ -126,7 +135,7 @@ hr {
   height: 20px;
   width: 100%;
   position: absolute;
-  top: -31px;
+  top: -33px;
   left: 0px;
   z-index: 4;
 }
@@ -158,6 +167,10 @@ hr {
   margin: 10px 0;
 }
 
+.about > p {
+  font-size: 20px;
+}
+
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
@@ -166,7 +179,7 @@ hr {
 }
 
 .devicons {
-	font-size: 2em; 
+	font-size: 1.5em; 
 }
 .devicons:hover {
 	color: @highlight-color;
@@ -180,12 +193,11 @@ hr {
   flex-direction: column;
   height: auto;  
     a {
-      border: solid 1px transparent;
+      border: solid 2px transparent;
     }
      a:hover {
     text-decoration: none;
-    border-top-color: @highlight-color;
-    border-bottom-color: @highlight-color;
+    border-color: @highlight-color;
     } 
 }
 
@@ -210,7 +222,7 @@ hr {
 }
 
 .recent-content p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .recent-thumbnail {
@@ -225,7 +237,7 @@ hr {
 }
 
 .recent-skill-icons {
-  font-size: 10px;
+  font-size: 16px;
   margin-top: 20px;
 }
 
@@ -251,6 +263,10 @@ hr {
   border: 2px solid @border-color;
 }
 
+.project-thumbnail:hover {
+  border-color: @highlight-color;
+}
+
 .project-cover {
   height: 100%;
   width: 100%;
@@ -260,11 +276,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.1s linear;
 }
 
 .project-cover:hover {
-  opacity: 1;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -291,6 +307,10 @@ hr {
   min-height: 200px;
 }
 
+.contact p {
+  font-size: 20px;
+}
+
 .btn-social-container {
   display: flex;
   justify-content: space-between;
@@ -308,7 +328,7 @@ hr {
 .footer {
   height: 60px;
   padding: 1em 0px;
-  font-size: 0.7em;
+  font-size: 14px;
   font-weight: 500;
   background-color: @content-bg-color;
   margin-bottom: 0;

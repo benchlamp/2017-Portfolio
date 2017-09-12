@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 22px;
   line-height: 1.2em;
   color: #535765;
   text-align: center;
@@ -14,11 +13,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Corben', Georgia, Times, serif;
+  /*font-family: 'Corben', Georgia, Times, serif;*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 p,
 div {
-  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+  /*font-family: 'Nobile', Helvetica, Arial, sans-serif;*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 body {
   background-color: #eaeff2;
@@ -67,6 +70,13 @@ hr {
   margin-left: auto;
   margin-right: 10px;
 }
+.header {
+  max-height: 300px;
+  overflow: hidden;
+}
+.header img {
+  max-width: 100%;
+}
 .profile-photo-container {
   height: 200px;
   width: 80%;
@@ -103,7 +113,7 @@ hr {
   height: 20px;
   width: 100%;
   position: absolute;
-  top: -31px;
+  top: -33px;
   left: 0px;
   z-index: 4;
 }
@@ -129,6 +139,9 @@ hr {
 .about > * {
   margin: 10px 0;
 }
+.about > p {
+  font-size: 20px;
+}
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
@@ -136,7 +149,7 @@ hr {
   margin-bottom: 20px;
 }
 .devicons {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .devicons:hover {
   color: #ff5722;
@@ -149,12 +162,11 @@ hr {
   height: auto;
 }
 .recent a {
-  border: solid 1px transparent;
+  border: solid 2px transparent;
 }
 .recent a:hover {
   text-decoration: none;
-  border-top-color: #ff5722;
-  border-bottom-color: #ff5722;
+  border-color: #ff5722;
 }
 .recent-1,
 .recent-2 {
@@ -171,7 +183,7 @@ hr {
   flex-direction: row-reverse;
 }
 .recent-content p {
-  font-size: 16px;
+  font-size: 20px;
 }
 .recent-thumbnail {
   height: 250px;
@@ -183,7 +195,7 @@ hr {
   max-width: 100%;
 }
 .recent-skill-icons {
-  font-size: 10px;
+  font-size: 16px;
   margin-top: 20px;
 }
 .project {
@@ -203,6 +215,9 @@ hr {
   overflow: hidden;
   border: 2px solid lightgray;
 }
+.project-thumbnail:hover {
+  border-color: #ff5722;
+}
 .project-cover {
   height: 100%;
   width: 100%;
@@ -212,10 +227,10 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.1s linear;
 }
 .project-cover:hover {
-  opacity: 1;
+  opacity: 0.8;
   cursor: pointer;
 }
 .project-thumbnail > img {
@@ -237,6 +252,9 @@ hr {
   flex-direction: column;
   min-height: 200px;
 }
+.contact p {
+  font-size: 20px;
+}
 .btn-social-container {
   display: flex;
   justify-content: space-between;
@@ -251,7 +269,7 @@ hr {
 .footer {
   height: 60px;
   padding: 1em 0px;
-  font-size: 0.7em;
+  font-size: 14px;
   font-weight: 500;
   background-color: #ffffff;
   margin-bottom: 0;

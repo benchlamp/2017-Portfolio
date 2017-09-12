@@ -11,8 +11,8 @@
   border-radius: 100%;
   position: absolute;
   overflow: hidden;
-  background-color: black;
-  transform: rotate(180deg);
+  background-color: #001848;
+  transform: rotate(160deg);
 }
 
 .sun {
@@ -136,7 +136,7 @@
   position: absolute;
   z-index: -1;
   color: white;
-
+  font-size: 10px;
 }
 
 
@@ -145,6 +145,7 @@
   position: absolute;
   z-index: 2;
   background-color: #7fa7e8;
+  border: solid 1px lightgray;
 }
 
 .land {
@@ -187,23 +188,23 @@
 
 @keyframes spin {
   50% {
-    background-color: lightblue;
+    background-color: #87CEFA;
   }
   100% {
     transform: rotate(540deg);
     -webkit-transform: rotate(540deg);
   -ms-transform: rotate(540deg);
-    background-color: black;
+    background-color: #001848;
   }
 }
 
 
 @keyframes sun-transition {
   60% {
-    border-color: lightblue;
+    border-color: #87CEFA;
   }
   100% {
-    border-color: black;
+    border-color: #001848;
   }
 }
 
