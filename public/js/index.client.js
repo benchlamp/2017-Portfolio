@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 
+
     var projectDataKeys = Object.keys(projectData);    
     
     for (var i = projectDataKeys.length -1; i > -1; i--) {
@@ -21,7 +22,7 @@ $(document).ready(function() {
     }
     
     
-    $(".menu a[href^='#']").on('click', function(e) {
+    $(".nav li a[href^='#'], .fa-arrow-down").on('click', function(e) {
         
         e.preventDefault();
         
@@ -33,7 +34,6 @@ $(document).ready(function() {
             window.location.hash = hash;
         });
     });
-    
-
+ 
 })
     

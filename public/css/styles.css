@@ -46,26 +46,144 @@ hr {
   margin-bottom: 20px;
   border: solid 2px lightgray;
 }
-.menu {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-  border: solid 2px lightgray;
-  border-radius: 0px;
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size: 22px;
+.navbar-default {
   background-color: #ffffff;
-  font-weight: 500;
+  margin-bottom: 0;
 }
-.menu a {
+.navbar-default .navbar-brand,
+.navbar-default .nav > li > .nav-link {
   color: #535765;
   font-size: 18px;
+  font-weight: 300;
 }
-.menu a:hover {
+#toggle-button:hover,
+#toggle-button:focus {
+  background-color: #eaeff2;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
   text-decoration: none;
   color: #ff5722;
 }
+/****Header***********************/
+.splash {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.type-container {
+  width: 500px;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+.splash h1 {
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  text-align: left;
+  overflow: hidden;
+  width: 40em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  animation: type 4s linear;
+  -webkit-animation: type 4s linear;
+  -moz-animation: type 4s linear;
+}
+.splash h1 .highlight {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+}
+.splash h1:nth-child(2) {
+  animation: type2 6s steps(60, end);
+  -webkit-animation: type2 6s steps(60, end);
+  -moz-animation: type2 6s steps(60, end);
+}
+.highlight {
+  animation: highlight 6s forwards ease-in;
+  -webkit-animation: highlight 6s forwards ease-in;
+  -moz-animation: highlight 6s forwards ease-in;
+}
+.cursor {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  animation: blink 0.75s infinite;
+  -webkit-animation: blink 0.75s infinite;
+  -moz-animation: blink 0.75s infinite;
+}
+.arrow {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  font-size: 16px;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite, arrow-fade-in 10s forwards ease-in;
+}
+.arrow a {
+  color: #535765;
+}
+.arrow :hover {
+  text-decoration: none;
+  color: #ff5722;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+@keyframes arrow-fade-in {
+  to {
+    opacity: 0.7;
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+@keyframes highlight {
+  to {
+    color: orange;
+  }
+}
+/***End Header************************/
 .menu-link-projects {
   margin-left: auto;
   margin-right: 10px;
@@ -201,6 +319,7 @@ hr {
 .project {
   border: solid white 15px;
   outline: 2px solid lightgray;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
   min-height: 300px;
@@ -238,7 +357,7 @@ hr {
   max-width: 100%;
 }
 .project-caption {
-  height: 10%;
+  height: 12%;
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -278,6 +397,15 @@ hr {
 @media only screen and (max-width: 500px) {
   * {
     font-weight: 300;
+  }
+  .splash {
+    height: 85vh;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h1 .highlight {
+    font-size: 30px;
   }
   .recent-1,
   .recent-2 {
